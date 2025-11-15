@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page </title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'open sans', sans-serif;
+        }
+        .logo1 {
+            width: 100%;
+            height:30vh;
+            background: url(logo1.jpg);
+            justify-content: space-between;
+            top: 0;
+            position: fixed;
+        }
+        .navbar{
+            width: 100%;
+            margin: bottom;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #b48c6c;
+            position: fixed;
+            bottom: 70%;
+        }
+
+        .navbar ul li:hover
+        {
+	    background: #000000;
+	    border-radius: 5px;
+        }
+
+
+
+       .nav-left, .nav-right{
+            display: flex;
+            list-style: none;
+            gap: 20vh;
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+        .nav-left li a, .nav-right li a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size:x-large;
+        } 
+        .logo2{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .logo2 img{
+            height:-80px;
+        }
+
+
+        .video-section {
+        position: relative;
+        width: 100%;
+        height: 150vh;
+        z-index: -1;
+        }
+        .bg-video {
+        position:absolute;
+        top: 20%;
+        left: 0;
+        min-width: 100%;
+        min-height: 20%;
+        object-fit: cover;
+        z-index: 0;
+        }
+
+
+        .content{
+            background: rgba(0,0,0,0.0.6);
+            position:relative;
+            text-align:left;
+            color: white;
+            padding: 20%;
+            margin: 0vh;
+            z-index: 1;
+        }
+        .underline-text{
+            border-bottom: 2px solid white;
+            padding-bottom: 4px;
+        }        
+        .page2{
+            position:relative;
+            object-fit:contain;
+            background-color: transparent rgba(rgb(10, 10, 10));
+            width: 100%;
+            justify-content: space-between;
+            height: 200vh;
+            z-index: -1;
+            background-image: url(logo4.jpg);
+            top: 20%;
+            left: 0;
+        }
+
+
+
+
+        .items{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .item img{
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+
+
+
+        
+
+        .video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            z-index: -1;
+        }
+
+
+        .row{
+            display:0hv;
+            padding: 10%;
+            width: 100%;
+            height: 100vh;
+            align-content:center;
+            color: white;
+        }
+        h1{
+            font-size: 10vh;
+        }
+        p{
+            font-size: 2.5vh;
+        }
+
+</style>
+</head>
+<body>
+    <section>
+        <div class="logo1">
+        <div class="navbar">
+            <ul class="nav-left">
+                <li><a herf="#">MENS</a></li>
+                <li><a herf="#">WOMENS</a></li>
+            </ul>
+                <div class="logo2">
+                    <img src="logo2.jpg" alt="logo">
+                </div>
+            <ul class="nav-right">
+                <li><a herf="#">COUPLES</a></li>
+                <li><a herf="#">CONTACT</a></li>
+            </ul>
+        </div>
+        </div>
+    </section>
+        <section>
+        <div class="video-section">
+            <video autoplay muted loop playsinline class="bg-video">
+              <source src="f videos.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          
+        <div class="content">
+            <img src="logo3.jpg" alt="logo">
+            <h1>
+                ARE <span class="underline-text">YOU</span> READY<br>
+                FOR AN EXPERIENCE<br>
+                OF A LIFETIME?
+                </h1>
+        </div>
+    </div>
+    </section>
+    <section >
+        <div class="page2">
+
+    </div>
+    </section>  
+    <section class="items">
+        <div class="item">
+            <img src="logo11.jpg" alt="logo">
+        </div>
+        <div class="item">
+            <img src="logo12.jpg" alt="logo">
+        </div>
+        <div class="item">
+            <img src="logo13.jpg" alt="logo">
+        </div>
+    </section>
+
+    <section>
+<iframe width="100%" height="900px" src="https://www.youtube.com/embed/lZSi7Uc61Qs?si=W7H_1QUmFanpKyDT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section>
+
+        
+    </section>
+    <section class="items">
+        <div class="item">
+            <img src="logo21.jpg" alt="logo">
+        </div>
+        <div class="item">
+            <img src="logo22.jpg" alt="logo">
+        </div>
+        <div class="item">
+            <img src="logo23.jpg" alt="logo">
+        </div>
+        <div class="item">
+            <img src="logo24.jpg" alt="logo">
+        </div>
+        <div class="item">
+            <img src="logo25.jpg" alt="logo">
+        </div>
+        <div class="item">
+            <img src="logo26.jpg" alt="logo">
+        </div>
+    </section>
+    <section>
+        <div>
+            <video autoplay muted loop playsinline class="video">
+              <source src="l video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="row">
+            <div>
+                <img src="logo2.jpg" alt="logo">
+            </div>
+            <div>
+              <h1> Valhalla   [ vahl-hah-luh ]</h1> <br>
+                <p>In modern life, "Valhalla" can symbolize a state of ultimate fulfillment and honor, where individuals seek to celebrate their achievements, camaraderie, and the legacies they leave behind. It represents a sanctuary for those who have faced challenges and adversity, encouraging people to live fully and authentically, fostering connections and shared experiences with others as they navigate their own battles in life</p>
+              </div> 
+              </div>
+    </section>
+</body>
+</html>
